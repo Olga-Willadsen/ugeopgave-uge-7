@@ -10,7 +10,7 @@ public class Main {
     double balanceUp = deposit(100);
     double balanceDown = withdraw(50);
 
-    Scanner scan = new Scanner (System.in);
+    Scanner scan = new Scanner (System.in);       // jeg prøvede med scanneren men kunne ikke finde ud af hvordan jeg skulle placere den.
 
 //opgave 1 methods
     double deposit (double amount){
@@ -116,7 +116,7 @@ public class Main {
        }
        return counter;}
 
-    void printAllStats (){
+   void printAllStats (){
         System.out.println("these are the ages in the array:");
         printArray();
         System.out.println(("the average age is: " + averageAge));
@@ -126,7 +126,7 @@ public class Main {
 
     }
 
-    void printArray(){
+   void printArray(){
         for(int number:ages){
             System.out.print(number+", ");
         }
@@ -136,7 +136,7 @@ public class Main {
 
 
 
-    void main (){
+   void main (){
        // System.out.println("How much do you wish to withdraw?");
 
 //opgave 1
@@ -168,23 +168,36 @@ public class Main {
         //printArray();
         printAllStats();
 
+//opgave 5
+
+     /*
+
+       void main() {
+
+           int a = 7, b = 42;
+           int smaller = minimum(a, b);
 
 
-    }
+           minimum(a, b);
+
+           if (smaller == a) {
+
+               System.out.println(a + " is the smallest!"); //retter teksten så der printes værdien af a i stedet for 'a'
+           }
+
+       }
+
+       int minimum(int a, int b) { //ændrer void til int
+
+           if (a < b) {
+       
+               return a; //ændrer retur til a, som så kan gemmes i global int som 'smaller'
+
+           } else return b; //returnerer b ved alle andre tilfælde.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        */
 
 }
+}
+
